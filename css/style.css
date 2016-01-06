@@ -108,6 +108,7 @@ img, video, audio {
 
 [class*="col-"] {
   margin-left: 2%;
+  overflow: auto;
 }
 
 .first {
