@@ -10,15 +10,15 @@ end
 Capybara.configure do |config|
   config.run_server = false
   config.default_driver = :selenium
-  config.app_host = 'http://localhost:4444'
+  config.app_host = 'http://127.0.0.1:4444'
 end
 
 def create_screenshots
-  GreenOnion.skin_visual('http://localhost:4444/index.html')
-  GreenOnion.skin_visual('http://localhost:4444/real-estate-listings.html')
-  GreenOnion.skin_visual('http://localhost:4444/market-report.html')
-  GreenOnion.skin_visual('http://localhost:4444/new-properties.html')
-  GreenOnion.skin_visual('http://localhost:4444/contact.html')
+  GreenOnion.skin_visual('http://127.0.0.1:4444/index.html')
+  GreenOnion.skin_visual('http://127.0.0.1:4444/real-estate-listings.html')
+  GreenOnion.skin_visual('http://127.0.0.1:4444/market-report.html')
+  GreenOnion.skin_visual('http://127.0.0.1:4444/new-properties.html')
+  GreenOnion.skin_visual('http://127.0.0.1:4444/contact.html')
 end
 
 def start_server_thread
