@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
-@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
 /* This 
 is 
@@ -42,17 +42,17 @@ figcaption {
 /* ID selector (apply to one unique element per page) */
 
 #logo { /* select elements with id="logo" */
-  background: aqua;
+   
 }
 
 /* Descendent Selector */
 
 #logo h1 { /* selects <h1> if inside the id="logo" */
-  font-family: 'Clicker Script', cursive;
+  font-family: 'Poiret one', cursive;
 }
 
 #logo h2 {
-  font-family: 'Elsie Swash Caps', cursive;
+  font-family: 'Indie Flower', cursive;
 }
 
 /* Psuedo Selector */
@@ -69,4 +69,72 @@ figcaption {
 
 #details a:active {
   color: red;
+}
+/*/////media////*/
+
+img, video, audio{max-width: 100%}
+/*/////layout////*/
+
+*{ -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto; 
+  
+}
+.col-1 {
+  float: left; 
+  width: 32%;
+  background: #ccc;
+
+}
+
+.col-2 {
+  float: left;
+  width: 66%;
+  background: #ccc;
+}
+.col-3 {
+  background: #ccc;
+
+}
+[class*='col-']
+{margin-left: 2%;}
+.first {margin-left: 0%}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0
+  line-height:0;
+}
+/*/////section////*/
+
+header {position: fixed;  
+top: 0;
+left: 0;
+width: 100%;
+background: #fff;
+z-index: 1}
+section {margin-bottom: 20px; padding: 20px;}
+
+
+/*/////social////*/
+#social{
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  width: 40px;
+  z-index: 1;
+}
+
+#social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
 }
