@@ -8,7 +8,13 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
   </head>
   <body>
+  <div id="social">
+    <a href="#">Twitter</a>
+    <a href="#">Facebook</a>
+    <a href="#">Google Plus</a>
+  </div>
     <header>
+    <div class="wrapper">
       <div id="logo">
         <h1>Exceptional</h1>
         <h2>Realty Group</h2>
@@ -16,9 +22,11 @@
       <nav>
         <a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings.html">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
       </nav>
+      </div> <!-- .wrapper -->
     </header>
+    <div class="wrapper clearfix">
 
-    <section id="featured-property">
+    <section id="featured-property" class="col-3 first">
       <figure>
         <img src="images/intro-pic.jpg" alt="A beautiful living room." title="Welcome to Exceptional Realty Group">
         <figcaption>345 Carl Street Apt 12, Carrol Rd. Brooklyn, NY - Photo by Denise Richards.</figcaption>
@@ -28,7 +36,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus, nobis, tempore recusandae culpa deleniti dignissimos laborum perspiciatis exercitationem obcaecati dolores unde eveniet eius debitis perferendis provident porro. Ipsum, placeat.</p>
     </section>
 
-    <section id="promotional">
+    <section id="promotional" class="col-2 first">
       <figure>
         <video controls>
           <source src="videos/real-estate.mp4" type="video/mp4"> 
@@ -38,9 +46,14 @@
         <figcaption>Exceptional Realty Group Promotional Video - Source: archive.org</figcaption>
       </figure>
     </section>
-
+<section id="news" class="col-1">
+  <h3>Company News</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</section>
+      </div> <!-- .wrapper -->
     <section id="details">
-      <div>
+    <div class="wrapper clearfix">
+      <div class="col-1 first">
         <h3>Contact</h3>
         <p>
           email: <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
@@ -54,7 +67,7 @@
         </address>
       </div>
 
-      <div>
+      <div class="col-1">
         <h3>Links</h3>
         <p>
           <a href="#" target="_blank">Home Restoration</a><br>
@@ -63,7 +76,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="col-1">
         <h3>Follow</h3>
         <p>
           <a href="#" target="_blank">Youtube</a><br>
@@ -71,6 +84,8 @@
           <a href="#" target="_blank">Twitter</a>
         </p>
       </div>
+            </div> <!-- .wrapper -->
+
     </section>
 
     <footer>
